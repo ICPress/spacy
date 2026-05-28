@@ -20,9 +20,6 @@ def analyze():
     return json.dumps(result, default=vars), 200, {'ContentType':'application/json'}
 
 def build_tree(token):
-    """
-    Rekursiv funktion som bygger dependency-trädet
-    """
     return {
         "text": token.text,
         "lemma": token.lemma_,
